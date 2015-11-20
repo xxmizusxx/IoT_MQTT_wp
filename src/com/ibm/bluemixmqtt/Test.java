@@ -19,6 +19,7 @@ public class Test {
     private MqttClient mqttClient = null;
 
     private int count = 0;
+    /**
     public static void main(String[] args) {
         new Test().doDevice();
     }

@@ -20,45 +20,6 @@ public class ReadMessage {
         return instance;
     }
 
-    private static String json = "\"d\":{" +
-            "\"gyro_x\":\"0,00\"," +
-            "\"compass_y\":\"0,00\"," +
-            "\"humidity\":\"68,27\"," +
-            "\"acc_y\":\"-0,00\"," +
-            "\"reed_relay\":\"0\"," +
-            "\"object_temp\":\"16,59\"," +
-            "\"acc_x\":\"0,00\"," +
-            "\"light\":\"32,17\"," +
-            "\"key_2\":\"0\"," +
-            "\"key_1\":\"0\"," +
-            "\"gyro_z\":\"0,00\"," +
-            "\"compass_x\":\"0,00\"," +
-            "\"ambient_temp\":\"23,56\"," +
-            "\"air_pressure\":\"889,04\"," +
-            "\"gyro_y\":\"0,00\"," +
-            "\"compass_z\":\"0,00\"," +
-            "\"acc_z\":\"-0,00\"" +
-            "}" ;
-
-    private static String json2 = "\"d\":{" +
-            "\"gyro_x\":\"0,00\"," +
-            "\"compass_y\":\"0,00\"," +
-            "\"humidity\":\"68,27\"," +
-            "\"acc_y\":\"-0,00\"," +
-            "\"reed_relay\":\"0\"," +
-            "\"object_temp\":\"16,59\"," +
-            "\"acc_x\":\"7,00\"," +
-            "\"light\":\"32,17\"," +
-            "\"key_2\":\"0\"," +
-            "\"key_1\":\"0\"," +
-            "\"gyro_z\":\"0,00\"," +
-            "\"compass_x\":\"0,00\"," +
-            "\"ambient_temp\":\"23,56\"," +
-            "\"air_pressure\":\"889,04\"," +
-            "\"gyro_y\":\"0,00\"," +
-            "\"compass_z\":\"0,00\"," +
-            "\"acc_z\":\"-0,00\"" +
-            "}" ;
 
     public AccelSensorValue readMessage(String str){
 
@@ -88,19 +49,6 @@ public class ReadMessage {
             System.out.println("bingo");
             return 0.0f;
         }
-    }
-
-
-    public static void main(String[] args) {
-        AccelSensorValue g = ReadMessage.getInstance().readMessage(ReadMessage.json);
-        boolean temr = StepDetector.getInstance().detectStep(g);
-
-        System.out.println("===> " + temr);
-
-        g = ReadMessage.getInstance().readMessage(ReadMessage.json2);
-        temr = StepDetector.getInstance().detectStep(g);
-
-        System.out.println("===> " + temr);
     }
 
 }
