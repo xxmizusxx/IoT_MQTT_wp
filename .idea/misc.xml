@@ -81,7 +81,4 @@
   <component name="RebarSettings">
     <rebarPath>$USER_HOME$/Dev/rebar/rebar</rebarPath>
   </component>
-  <component name="SvnConfiguration" myUseAcceleration="nothing" SSL_PROTOCOLS="sslv3">
-    <configuration>$USER_HOME$/.subversion</configuration>
-  </component>
 </project>
