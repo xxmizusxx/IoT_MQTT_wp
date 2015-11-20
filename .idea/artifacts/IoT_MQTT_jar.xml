@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="IoT_MQTT:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/IoT_MQTT_jar</output-path>
+    <root id="archive" name="IoT_MQTT.jar">
+      <element id="module-output" name="IoT_MQTT" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/MyData/bluemixmqtt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/MyData/json4j-apache-1.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/MyData/org.eclipse.paho.client.mqttv3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/gson-2.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/org.eclipse.paho.client.mqttv3-1.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/json4j-apache-1.1.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

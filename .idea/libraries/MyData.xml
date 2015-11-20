@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="MyData">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/MyData/bluemixmqtt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MyData/json4j-apache-1.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MyData/org.eclipse.paho.client.mqttv3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
